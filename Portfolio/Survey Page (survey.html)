@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include the same head section as index.html -->
+</head>
+<body>
+    <header>
+        <!-- Include the same navigation as index.html -->
+    </header>
+    <main>
+        <section>
+            <h1>Survey</h1>
+            <form id="survey-form">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <fieldset>
+                    <legend>Do you like web development?</legend>
+                    <label><input type="radio" name="like_webdev" value="yes" required> Yes</label>
+                    <label><input type="radio" name="like_webdev" value="no"> No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which technologies do you prefer?</legend>
+                    <label><input type="checkbox" name="tech" value="html"> HTML</label>
+                    <label><input type="checkbox" name="tech" value="css"> CSS</label>
+                    <label><input type="checkbox" name="tech" value="js"> JavaScript</label>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; [Your Name] 2023</p>
+    </footer>
+</body>
+</html>
