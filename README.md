@@ -1,18 +1,38 @@
-# Personal Portfolio Website
-
-## Tools Used
-- HTML5
-- CSS3
-- JavaScript
-- Visual Studio Code
-
-## Key Features Implemented
-- Multi-page structure with a responsive design.
-- Semantic HTML5 with proper usage of tags.
-- JavaScript for dynamic greeting, form validation, and theme toggle.
-- CSS for styling, including layouts and print-friendly styles.
-- Accessibility considerations, including proper label usage and alt attributes.
-
-## Challenges Faced
-- Ensuring proper form validation using regex for the email field was challenging but was solved with the correct regex pattern.
-- Creating a responsive layout required multiple adjustments using media queries.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio of [Your Name] showcasing skills and projects.">
+    <meta name="keywords" content="portfolio, web development, [Your Skills]">
+    <meta name="author" content="[Your Name]">
+    <title>[Your Name] | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <main>
+        <section id="greeting"></section>
+        <section>
+            <h2>Featured Projects</h2>
+            <p>Check out my latest work!</p>
+            <!-- Add project links or images here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; [Your Name] 2023</p>
+    </footer>
+</body>
+</html>
