@@ -1,0 +1,39 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Greeting function
+    const greeting = () => {
+        const hours = new Date().getHours();
+        let greetingMessage = '';
+        if (hours < 12) {
+            greetingMessage = 'Good Morning!';
+        } else if (hours < 18) {
+            greetingMessage = 'Good Afternoon!';
+        } else {
+            greetingMessage = 'Good Evening!';
+        }
+        document.getElementById('greeting').innerText = greetingMessage;
+    };
+
+    greeting();
+
+    // Form validation for contact form
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (!email.match(emailPattern)) {
+                event.preventDefault();
+                alert('Please enter a valid email address.');
+            }
+        });
+    }
+
+    // Toggle dark/light mode
+    const toggleTheme = document.getElementById('theme-toggle');
+    if (toggleTheme) {
+        toggleTheme.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    }
+});
